@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# MEIT 프로젝트
+data/
+logs/
+*.wav

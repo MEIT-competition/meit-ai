@@ -1,4 +1,3 @@
-# main.py
 from decision.judge import judge
 from logger.csv_logger import EventLogger
 
@@ -15,4 +14,4 @@ for probs, direction in samples:
     if cmd:
         print(cmd)
         log.log(cmd["sound_class"], cmd["confidence"], cmd["direction"],
-                cmd["intensity"], cmd["pattern"])
+                cmd["intensity"], cmd["pattern_name"])

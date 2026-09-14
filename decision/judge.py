@@ -1,16 +1,16 @@
-# decision/judge.py
-THRESHOLD = 0.4
+from decision.patterns import PATTERNS
 
-PATTERNS = {
-    "horn":  "double_short",   # 짧게 2번
-    "siren": "repeat",         # 반복
-    "crash": "single_strong",  # 강하게 1번
-}
+THRESHOLD = 0.4
+DB_GATE = 50.0  # 임시값, 실측 후 조정
 
 def judge(probs: dict, direction: int, db: float | None = None):
     """probs: {"horn":0.1,"siren":0.8,"crash":0.05,"normal":0.05}
        direction: 0~7 (0=정면, 시계방향), 판별 불가 시 -1
+       db: 수음 음량(dB), None이면 게이트 미적용
        반환: None(알림 없음) 또는 진동 명령 dict"""
+    if db is not None and db < DB_GATE:
+        return None
+
     top = max(probs, key=probs.get)
     conf = probs[top]
 
@@ -23,6 +23,7 @@ def judge(probs: dict, direction: int, db: float | None = None):
     return {
         "direction": direction,
         "pattern": PATTERNS[top],
+        "pattern_name": top,
         "intensity": intensity,
         "sound_class": top,
         "confidence": conf,

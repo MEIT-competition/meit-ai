@@ -42,11 +42,3 @@ pip install -r requirements.txt
 9. `python inference.py path/to/clip.wav` — 단일 클립 분류 테스트 (전자팀에 넘길 때 이 파일 기준으로 연동)
 
 `augment_data.py`를 나중에 다시 돌리면 중복 추가되니, 재실행 전엔 `manifest.csv`를 백업하거나 augmented 행을 지우고 실행하세요. 또한 데이터를 추가/증강한 뒤에는 `embed_cache/*.npz`를 삭제하고 `train_yamnet.py`를 다시 돌려야 새 클립이 반영됩니다.
-
-## 설계 메모
-- fold는 원본 파일명 해시로 결정 → 같은 원본에서 나온 클립이 train/val/test에 섞여 들어가는 데이터 누수 방지
-- YAMNet은 freeze(trainable=False), Dense(512)+Dropout+Dense(4)만 학습 — 소규모 데이터로도 수렴 잘 됨
-- **class_weight로 위음성 최소화 원칙을 학습 손실에 직접 반영**: crash=3.0, siren/horn=2.0, normal=1.0 (common.py의 CLASS_WEIGHTS)
-- 노트북 연동으로 확정되어 TFLite 변환 불필요, SavedModel 그대로 배포
-- 목표: Recall 90% 이상 최우선 (위음성 최소화), Precision/F1·시간당 오탐 횟수는 보조 지표
-- threshold_search.py의 N-of-M 연속확인 실험은 참고용 — 실제 게이팅 로직은 이예은님 구현과 맞춰서 결정

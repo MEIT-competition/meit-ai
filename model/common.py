@@ -16,7 +16,7 @@ CLASSES = ["horn", "siren", "crash", "normal"]
 CLASS_TO_IDX = {c: i for i, c in enumerate(CLASSES)}
 NORMAL_IDX = CLASS_TO_IDX["normal"]
 
-# 위험음을 놓치는 게 더 치명적이라 danger 클래스에 더 큰 가중치를 줌 (crash > siren/horn > normal)
+# 위험음을 놓치는 게 더 치명적이라 danger 클래스에 더 큰 가중치를 줌 (horn/siren/crash > normal)
 CLASS_WEIGHTS = {
     CLASS_TO_IDX["horn"]: 2.0,
     CLASS_TO_IDX["siren"]: 2.0,

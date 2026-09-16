@@ -1,0 +1,11 @@
+{
+  "temperature": 2.2444913387298584,
+  "ece_before": 0.03405016697483298,
+  "ece_after": 0.019369387148339072,
+  "classes": [
+    "horn",
+    "siren",
+    "crash",
+    "normal"
+  ]
+}

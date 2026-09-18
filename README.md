@@ -244,3 +244,7 @@ timestamp, sound_class, confidence, direction, intensity, pattern
 0.7 미만이 19건(0.6%)에 불과해, `LOW_CONF_RATIO`를 제거하고 데시벨 기반 세기로
 일원화하는 방안을 검토 중입니다. 다만 위 수치는 공개 데이터셋 기준이므로,
 실제 마이크 환경에서는 애매한 케이스가 늘어날 수 있어 실측 후 결정이 필요합니다.
+
+## 참고 문서
+
+- [1차 전이학습 관련 정리 (Notion)](https://app.notion.com/p/1-3df21baed69980e784a5d006bec81fd0?source=copy_link)

@@ -8,13 +8,13 @@ log = EventLogger()
 
 
 def process(audio_path, direction=None):
-    probs = predict(audio_path)
+    probs, db = predict(audio_path)
     if direction is None:
         direction = random.randint(0, 7)   # 하드웨어 없어서 임시
 
-    cmd = judge(probs, direction)
+    cmd = judge(probs, direction, db)
     top = max(probs, key=probs.get)
-    print(f"{audio_path}\n  → {top} {probs[top]:.3f}")
+    print(f"{audio_path}\n  → {top} {probs[top]:.3f}  ({db:.1f} dBFS)")
 
     if cmd:
         print(f"  진동: {cmd['pattern_name']} 세기{cmd['intensity']} 방향{cmd['direction']}")

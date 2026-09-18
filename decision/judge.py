@@ -1,7 +1,8 @@
+from decision.intensity import compute_intensity
 from decision.patterns import get_pattern
 
 THRESHOLD = 0.4
-DB_GATE = 50.0  # 임시값, 실측 후 조정
+DB_GATE = -50.0  # 임시값, 실측 후 조정
 
 
 def judge(probs: dict, direction: int, db: float | None = None):
@@ -21,7 +22,7 @@ def judge(probs: dict, direction: int, db: float | None = None):
         "direction": direction,
         "pattern": get_pattern(top),
         "pattern_name": top,
-        "intensity": 100 if conf >= 0.7 else 60,
+        "intensity": compute_intensity(conf, db),
         "sound_class": top,
         "confidence": conf,
     }

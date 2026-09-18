@@ -20,7 +20,7 @@ AI 연산은 노트북에서 수행하고, 결과를 블루투스로 MCU에 전�
 meit-ai/
 ├─ main.py              # 전체 파이프라인 (오디오 → 진동 명령 → 로그)
 ├─ classifier/
-│   └─ adapter.py       # 모델 로드·추론, 4.5초 클립 처리, dBFS 측정
+│   └─ adapter.py       # 모델 로드·추론, 확신도 보정, 4.5초 클립 처리, dBFS 측정
 ├─ decision/
 │   ├─ judge.py         # 위험도 판단 (임계값, 음량 게이트)
 │   ├─ intensity.py     # dBFS → 진동 세기 산출
@@ -75,7 +75,7 @@ python main.py data/horn/a.wav data/siren/b.wav
     "pattern": [[100, 50], [100, 0]],      # [[켜는 ms, 끄는 ms], ...]
     "pattern_name": "siren",
     "sound_class": "siren",
-    "confidence": 0.998,
+    "confidence": 0.949,
 }
 ```
 
@@ -85,7 +85,7 @@ python main.py data/horn/a.wav data/siren/b.wav
 
 ## 클래스
 
-예선 기획안의 돌발상황은 정의가 모호하다는 심사 피드백(#4)을 받아 `crash`로 구체화했습니다.
+예선 기획안의 "돌발상황"은 정의가 모호하다는 심사 피드백(#4)을 받아 `crash`로 구체화했습니다.
 
 | 클래스 | 설명 | 진동 패턴 |
 |---|---|---|
@@ -100,6 +100,17 @@ python main.py data/horn/a.wav data/siren/b.wav
 ```bash
 python -m decision.patterns   # 패턴별 길이와 선택 결과 확인
 ```
+
+---
+
+## 확신도 보정
+
+`model/calibration.json`의 temperature(2.2445)를 softmax 이전에 적용합니다.
+신경망은 과신하는 경향이 있어, 확신도 수치가 실제 정확도를 반영하도록 보정한 값입니다.
+파일이 없으면 T=1.0으로 동작하며 경고를 출력합니다.
+
+`model/threshold_search.py`가 검증한 임계값 0.4는 보정된 확신도 기준이므로,
+보정을 건너뛰면 튜닝된 적 없는 동작점에서 동작하게 됩니다.
 
 ---
 
@@ -149,6 +160,7 @@ binary 기준 수치는 양쪽이 정확히 일치합니다.
 python -m eval.evaluate_val    # 검증 데이터(fold 4) 평가
 python -m eval.evaluate        # data/ 전체 평가
 python -m eval.judge_stats     # 세기 분포, dBFS 범위
+python -m eval.conf_dist       # 확신도 분포
 ```
 
 > `data/` 폴더에는 중단된 증강 실험의 잔여 파일(`aug_snr5`, `aug_snr15`)이 남아 있을 수 있습니다.
@@ -190,17 +202,26 @@ timestamp, sound_class, confidence, direction, intensity, pattern
 
 ## 남은 작업
 
-- [ ] **Temperature scaling 반영** — `model/calibration.json`의 T=2.24를 `classifier/adapter.py`에도 적용 (현재 미적용, 아래 참고)
 - [ ] 실제 MEMS 마이크 기준 dBFS 실측 후 `DB_MIN`/`DB_MAX`/`DB_GATE` 조정
 - [ ] 실시간 버퍼 방식 — 최근 4.5초를 유지하면서 게이팅 주기마다 판단
-- [ ] 연속 확인(N-of-M) 로직 — 게이팅 주기 확정 후
+- [ ] 연속 확인(N-of-M) 로직 — 게이팅 주기 확정 후 (`model/ablation_log.csv`에 실험 결과 있음)
 - [ ] 실제 방향값 연동 (전자팀 하드웨어 대기)
 - [ ] microSD 로그 저장 연동
 
-### 확인 필요
+### 논의 필요 — 확신도 구간별 세기 구분
 
-**확신도 보정이 파이프라인에 반영되어 있지 않습니다.**
-`model/inference.py`는 `softmax(logits / T)`로 보정된 확신도를 쓰지만,
-`classifier/adapter.py`는 보정 없이 `softmax(logits)`를 씁니다.
-이 때문에 확신도가 과신되어, 설계했던 0.4~0.7 구간(약한 진동)이 사실상 발생하지 않습니다.
-보정을 적용하면 확신도 분포가 넓어지므로 임계값과 세기 매핑을 함께 재확인해야 합니다.
+기획안의 "확신도 0.7 이상 100% / 0.4~0.7 60%" 설계가 실제로는 거의 작동하지 않습니다.
+보정 적용 후 위험음 판정 3,169건의 확신도 분포는 아래와 같습니다.
+
+| 구간 | 건수 |
+|---|---|
+| 0.3–0.4 | 1 |
+| 0.5–0.6 | 5 |
+| 0.6–0.7 | 13 |
+| 0.7–0.8 | 39 |
+| 0.8–0.9 | 178 |
+| 0.9+ | 2,933 |
+
+0.7 미만이 19건(0.6%)에 불과해, `LOW_CONF_RATIO`를 제거하고 데시벨 기반 세기로
+일원화하는 방안을 검토 중입니다. 다만 위 수치는 공개 데이터셋 기준이므로,
+실제 마이크 환경에서는 애매한 케이스가 늘어날 수 있어 실측 후 결정이 필요합니다.

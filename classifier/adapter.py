@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 import numpy as np
 import tensorflow as tf
 import librosa
@@ -6,14 +9,30 @@ CLASSES = ["horn", "siren", "crash", "normal"]
 SR = 16000
 CLIP_SEC = 4.5   # 학습과 동일하게 고정
 
+MODEL_PATH = "model/saved_model/danger_sound_classifier"
+CALIB_PATH = Path("model/calibration.json")
+
 _infer = None
+_temperature = None
 
 
-def load_model(path="model/saved_model/danger_sound_classifier"):
+def load_model(path=MODEL_PATH):
     global _infer
     if _infer is None:
         _infer = tf.saved_model.load(path).signatures["serving_default"]
     return _infer
+
+
+def load_temperature():
+    """확신도 보정값. model/calibration.py 결과를 그대로 사용."""
+    global _temperature
+    if _temperature is None:
+        if CALIB_PATH.exists():
+            _temperature = float(json.loads(CALIB_PATH.read_text())["temperature"])
+        else:
+            _temperature = 1.0
+            print("[경고] calibration.json 없음 — 보정 미적용")
+    return _temperature
 
 
 def fit_length(wav, sec=CLIP_SEC):
@@ -23,7 +42,6 @@ def fit_length(wav, sec=CLIP_SEC):
         return wav
     if len(wav) < n:
         return np.pad(wav, (0, n - len(wav)))
-    # 에너지가 가장 큰 지점 중심으로 잘라내기
     win = SR // 10
     energy = np.convolve(wav ** 2, np.ones(win), mode="same")
     center = int(np.argmax(energy))
@@ -44,5 +62,6 @@ def predict(audio_path):
     wav = fit_length(wav)
 
     out = load_model()(audio=tf.constant(wav, dtype=tf.float32))
-    probs = tf.nn.softmax(out["output_0"].numpy()).numpy()
+    logits = out["output_0"].numpy()
+    probs = tf.nn.softmax(logits / load_temperature()).numpy()
     return {c: float(p) for c, p in zip(CLASSES, probs)}, db

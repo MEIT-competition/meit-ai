@@ -65,3 +65,20 @@ def predict(audio_path):
     logits = out["output_0"].numpy()
     probs = tf.nn.softmax(logits / load_temperature()).numpy()
     return {c: float(p) for c, p in zip(CLASSES, probs)}, db
+
+def predict_array(wav):
+    """16kHz mono float32 배열 → ({클래스: 확신도}, dBFS)"""
+    wav = np.asarray(wav, dtype=np.float32)
+    db = measure_db(wav)
+    wav = fit_length(wav)
+
+    out = load_model()(audio=tf.constant(wav, dtype=tf.float32))
+    logits = out["output_0"].numpy()
+    probs = tf.nn.softmax(logits / load_temperature()).numpy()
+    return {c: float(p) for c, p in zip(CLASSES, probs)}, db
+
+
+def predict(audio_path):
+    """오디오 파일 경로 → ({클래스: 확신도}, dBFS)"""
+    wav, _ = librosa.load(audio_path, sr=SR, mono=True)
+    return predict_array(wav)

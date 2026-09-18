@@ -63,7 +63,25 @@ python main.py data/horn/a.wav data/siren/b.wav
 방향값은 하드웨어 연동 전이라 현재 임의값(0~7)이 들어갑니다.
 
 ---
+## 전자팀 연동
 
+블루투스로 받은 오디오를 파일로 저장하지 않고 바로 넘길 수 있습니다.
+
+```python
+from main import process_array
+
+cmd = process_array(wav, direction=3)   # wav: 16kHz mono float32 배열
+```
+
+반환값은 아래 출력 포맷과 동일하며, 위험음이 아니면 `None`입니다.
+`direction`을 생략하면 -1(판별 불가)로 처리됩니다.
+
+| 함수 | 입력 | 용도 |
+|---|---|---|
+| `main.process(path)` | 파일 경로 | 테스트·평가용 |
+| `main.process_array(wav)` | 16kHz mono 배열 | 실시간 연동용 |
+
+---
 ## 출력 포맷
 
 위험음으로 판단되면 아래 형태의 진동 명령이 생성됩니다. 전자팀은 이 형식을 받아 모터를 구동합니다.
@@ -207,6 +225,7 @@ timestamp, sound_class, confidence, direction, intensity, pattern
 - [ ] 연속 확인(N-of-M) 로직 — 게이팅 주기 확정 후 (`model/ablation_log.csv`에 실험 결과 있음)
 - [ ] 실제 방향값 연동 (전자팀 하드웨어 대기)
 - [ ] microSD 로그 저장 연동
+- [ ] 노트북 ↔ MCU 통신 규약 — 오디오/명령 형식, 블루투스 수신 루프 (담당 미정)
 
 ### 논의 필요 — 확신도 구간별 세기 구분
 

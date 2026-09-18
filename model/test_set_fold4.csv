@@ -1,0 +1,341 @@
+filepath,label
+dataset\horn\horn_horn (104)_000.wav,horn
+dataset\horn\horn_horn (106)_000.wav,horn
+dataset\horn\horn_horn (130)_000.wav,horn
+dataset\horn\horn_horn (137)_000.wav,horn
+dataset\horn\horn_horn (140)_000.wav,horn
+dataset\horn\horn_horn (15)_000.wav,horn
+dataset\horn\horn_horn (15)_001.wav,horn
+dataset\horn\horn_horn (15)_000.wav,horn
+dataset\horn\horn_horn (163)_000.wav,horn
+dataset\horn\horn_horn (165)_000.wav,horn
+dataset\horn\horn_horn (174)_000.wav,horn
+dataset\horn\horn_horn (179)_000.wav,horn
+dataset\horn\horn_horn (181)_000.wav,horn
+dataset\horn\horn_horn (198)_000.wav,horn
+dataset\horn\horn_horn (199)_000.wav,horn
+dataset\horn\horn_horn (2)_000.wav,horn
+dataset\horn\horn_horn (203)_000.wav,horn
+dataset\horn\horn_horn (207)_000.wav,horn
+dataset\horn\horn_horn (216)_000.wav,horn
+dataset\horn\horn_horn (218)_000.wav,horn
+dataset\horn\horn_horn (220)_000.wav,horn
+dataset\horn\horn_horn (221)_000.wav,horn
+dataset\horn\horn_horn (222)_000.wav,horn
+dataset\horn\horn_horn (226)_000.wav,horn
+dataset\horn\horn_horn (233)_000.wav,horn
+dataset\horn\horn_horn (234)_000.wav,horn
+dataset\horn\horn_horn (246)_000.wav,horn
+dataset\horn\horn_horn (263)_000.wav,horn
+dataset\horn\horn_horn (265)_000.wav,horn
+dataset\horn\horn_horn (272)_000.wav,horn
+dataset\horn\horn_horn (274)_000.wav,horn
+dataset\horn\horn_horn (275)_000.wav,horn
+dataset\horn\horn_horn (277)_000.wav,horn
+dataset\horn\horn_horn (29)_000.wav,horn
+dataset\horn\horn_horn (29)_001.wav,horn
+dataset\horn\horn_horn (29)_002.wav,horn
+dataset\horn\horn_horn (29)_003.wav,horn
+dataset\horn\horn_horn (29)_000.wav,horn
+dataset\horn\horn_horn (301)_000.wav,horn
+dataset\horn\horn_horn (33)_000.wav,horn
+dataset\horn\horn_horn (343)_000.wav,horn
+dataset\horn\horn_horn (368)_000.wav,horn
+dataset\horn\horn_horn (37)_000.wav,horn
+dataset\horn\horn_horn (439)_000.wav,horn
+dataset\horn\horn_horn (446)_000.wav,horn
+dataset\horn\horn_horn (465)_000.wav,horn
+dataset\horn\horn_horn (469)_000.wav,horn
+dataset\horn\horn_horn (473)_000.wav,horn
+dataset\horn\horn_horn (475)_000.wav,horn
+dataset\horn\horn_horn (48)_000.wav,horn
+dataset\horn\horn_horn (49)_000.wav,horn
+dataset\horn\horn_horn (59)_000.wav,horn
+dataset\horn\horn_horn (60)_000.wav,horn
+dataset\horn\horn_horn (61)_000.wav,horn
+dataset\horn\horn_horn (76)_000.wav,horn
+dataset\horn\horn_horn (80)_000.wav,horn
+dataset\horn\horn_horn (82)_000.wav,horn
+dataset\horn\horn_horn (86)_000.wav,horn
+dataset\siren\siren_ambulance_sound_101_000.wav,siren
+dataset\siren\siren_ambulance_sound_103_000.wav,siren
+dataset\siren\siren_ambulance_sound_11_000.wav,siren
+dataset\siren\siren_ambulance_sound_120_000.wav,siren
+dataset\siren\siren_ambulance_sound_126_000.wav,siren
+dataset\siren\siren_ambulance_sound_13_000.wav,siren
+dataset\siren\siren_ambulance_sound_131_000.wav,siren
+dataset\siren\siren_ambulance_sound_14_000.wav,siren
+dataset\siren\siren_ambulance_sound_145_000.wav,siren
+dataset\siren\siren_ambulance_sound_156_000.wav,siren
+dataset\siren\siren_ambulance_sound_16_000.wav,siren
+dataset\siren\siren_ambulance_sound_165_000.wav,siren
+dataset\siren\siren_ambulance_sound_173_000.wav,siren
+dataset\siren\siren_ambulance_sound_176_000.wav,siren
+dataset\siren\siren_ambulance_sound_180_000.wav,siren
+dataset\siren\siren_ambulance_sound_190_000.wav,siren
+dataset\siren\siren_ambulance_sound_197_000.wav,siren
+dataset\siren\siren_ambulance_sound_24_000.wav,siren
+dataset\siren\siren_ambulance_sound_25_000.wav,siren
+dataset\siren\siren_ambulance_sound_27_000.wav,siren
+dataset\siren\siren_ambulance_sound_30_000.wav,siren
+dataset\siren\siren_ambulance_sound_44_000.wav,siren
+dataset\siren\siren_ambulance_sound_52_000.wav,siren
+dataset\siren\siren_ambulance_sound_53_000.wav,siren
+dataset\siren\siren_ambulance_sound_56_000.wav,siren
+dataset\siren\siren_ambulance_sound_69_000.wav,siren
+dataset\siren\siren_ambulance_sound_70_000.wav,siren
+dataset\siren\siren_ambulance_sound_74_000.wav,siren
+dataset\siren\siren_ambulance_sound_77_000.wav,siren
+dataset\siren\siren_ambulance_sound_79_000.wav,siren
+dataset\siren\siren_ambulance_sound_95_000.wav,siren
+dataset\siren\siren_esc50_1-76831-A-42_000.wav,siren
+dataset\siren\siren_esc50_3-51909-B-42_000.wav,siren
+dataset\siren\siren_esc50_4-111671-B-42_000.wav,siren
+dataset\siren\siren_esc50_4-67358-A-42_000.wav,siren
+dataset\siren\siren_esc50_5-133989-A-42_000.wav,siren
+dataset\siren\siren_firetruck_sound_202_000.wav,siren
+dataset\siren\siren_firetruck_sound_203_000.wav,siren
+dataset\siren\siren_firetruck_sound_205_000.wav,siren
+dataset\siren\siren_firetruck_sound_206_000.wav,siren
+dataset\siren\siren_firetruck_sound_208_000.wav,siren
+dataset\siren\siren_firetruck_sound_212_000.wav,siren
+dataset\siren\siren_firetruck_sound_214_000.wav,siren
+dataset\siren\siren_firetruck_sound_216_000.wav,siren
+dataset\siren\siren_firetruck_sound_217_000.wav,siren
+dataset\siren\siren_firetruck_sound_220_000.wav,siren
+dataset\siren\siren_firetruck_sound_226_000.wav,siren
+dataset\siren\siren_firetruck_sound_227_000.wav,siren
+dataset\siren\siren_firetruck_sound_228_000.wav,siren
+dataset\siren\siren_firetruck_sound_229_000.wav,siren
+dataset\siren\siren_firetruck_sound_235_000.wav,siren
+dataset\siren\siren_firetruck_sound_245_000.wav,siren
+dataset\siren\siren_firetruck_sound_247_000.wav,siren
+dataset\siren\siren_firetruck_sound_254_000.wav,siren
+dataset\siren\siren_firetruck_sound_255_000.wav,siren
+dataset\siren\siren_firetruck_sound_261_000.wav,siren
+dataset\siren\siren_firetruck_sound_268_000.wav,siren
+dataset\siren\siren_firetruck_sound_273_000.wav,siren
+dataset\siren\siren_firetruck_sound_277_000.wav,siren
+dataset\siren\siren_firetruck_sound_280_000.wav,siren
+dataset\siren\siren_firetruck_sound_281_000.wav,siren
+dataset\siren\siren_firetruck_sound_283_000.wav,siren
+dataset\siren\siren_firetruck_sound_284_000.wav,siren
+dataset\siren\siren_firetruck_sound_288_000.wav,siren
+dataset\siren\siren_firetruck_sound_304_000.wav,siren
+dataset\siren\siren_firetruck_sound_307_000.wav,siren
+dataset\siren\siren_firetruck_sound_308_000.wav,siren
+dataset\siren\siren_firetruck_sound_319_000.wav,siren
+dataset\siren\siren_firetruck_sound_328_000.wav,siren
+dataset\siren\siren_firetruck_sound_333_000.wav,siren
+dataset\siren\siren_firetruck_sound_334_000.wav,siren
+dataset\siren\siren_firetruck_sound_335_000.wav,siren
+dataset\siren\siren_firetruck_sound_336_000.wav,siren
+dataset\siren\siren_firetruck_sound_352_000.wav,siren
+dataset\siren\siren_firetruck_sound_357_000.wav,siren
+dataset\siren\siren_firetruck_sound_359_000.wav,siren
+dataset\siren\siren_firetruck_sound_362_000.wav,siren
+dataset\siren\siren_firetruck_sound_366_000.wav,siren
+dataset\siren\siren_firetruck_sound_369_000.wav,siren
+dataset\siren\siren_firetruck_sound_382_000.wav,siren
+dataset\siren\siren_firetruck_sound_394_000.wav,siren
+dataset\siren\siren_firetruck_sound_395_000.wav,siren
+dataset\siren\siren_firetruck_sound_398_000.wav,siren
+dataset\siren\siren_firetruck_sound_399_000.wav,siren
+dataset\siren\siren_firetruck_sound_400_000.wav,siren
+dataset\crash\crash_crash (106)_000.wav,crash
+dataset\crash\crash_crash (106)_001.wav,crash
+dataset\crash\crash_crash (113)_000.wav,crash
+dataset\crash\crash_crash (12)_000.wav,crash
+dataset\crash\crash_crash (120)_000.wav,crash
+dataset\crash\crash_crash (126)_000.wav,crash
+dataset\crash\crash_crash (13)_000.wav,crash
+dataset\crash\crash_crash (13)_000.wav,crash
+dataset\crash\crash_crash (16)_000.wav,crash
+dataset\crash\crash_crash (16)_001.wav,crash
+dataset\crash\crash_crash (16)_000.wav,crash
+dataset\crash\crash_crash (17)_000.wav,crash
+dataset\crash\crash_crash (20)_000.wav,crash
+dataset\crash\crash_crash (23)_000.wav,crash
+dataset\crash\crash_crash (25)_000.wav,crash
+dataset\crash\crash_crash (25)_001.wav,crash
+dataset\crash\crash_crash (25)_002.wav,crash
+dataset\crash\crash_crash (25)_000.wav,crash
+dataset\crash\crash_crash (28)_000.wav,crash
+dataset\crash\crash_crash (29)_000.wav,crash
+dataset\crash\crash_crash (32)_000.wav,crash
+dataset\crash\crash_crash (41)_000.wav,crash
+dataset\crash\crash_crash (49)_000.wav,crash
+dataset\crash\crash_crash (49)_001.wav,crash
+dataset\crash\crash_crash (5)_000.wav,crash
+dataset\crash\crash_crash (57)_000.wav,crash
+dataset\crash\crash_crash (63)_000.wav,crash
+dataset\crash\crash_crash (75)_000.wav,crash
+dataset\crash\crash_crash (76)_000.wav,crash
+dataset\crash\crash_crash (89)_000.wav,crash
+dataset\crash\crash_crash (89)_001.wav,crash
+dataset\crash\crash_crash_01_000.wav,crash
+dataset\crash\crash_crash_03_000.wav,crash
+dataset\crash\crash_crash_110_000.wav,crash
+dataset\crash\crash_crash_23_000.wav,crash
+dataset\crash\crash_crash_26_000.wav,crash
+dataset\crash\crash_crash_27_000.wav,crash
+dataset\crash\crash_crash_27_001.wav,crash
+dataset\crash\crash_crash_30_000.wav,crash
+dataset\crash\crash_crash_42_000.wav,crash
+dataset\crash\crash_crash_43_000.wav,crash
+dataset\crash\crash_crash_87_000.wav,crash
+dataset\crash\crash_crash_brake_02_000.wav,crash
+dataset\normal\normal_archive_(2)_Bics_Audio_Simulation_for_bicycle_sound_01_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Audio_Simulation_for_bicycle_sound_03_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Audio_Simulation_for_bicycle_sound_07_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Audio_Simulation_for_bicycle_sound_14_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Audio_Simulation_for_bicycle_sound_16_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_028_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_033_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_039_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_049_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_055_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_058_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_061_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_062_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_067_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_072_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_077_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_079_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_094_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_102_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_107_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_108_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_111_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_114_000.wav,normal
+dataset\normal\normal_archive_(2)_Bics_Bicycle___Sound_Effect___Bicycle_Sound___White_Noise_118_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_099_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_103_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_104_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_107_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_110_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_111_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_114_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_119_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_121_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_135_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_136_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_152_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_153_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_158_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_164_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_165_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_172_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_177_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_179_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_185_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_186_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_188_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_195_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_199_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_203_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_211_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_215_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_216_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_219_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_228_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_235_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_237_000.wav,normal
+dataset\normal\normal_archive_(2)_bus_Bus_Driving_Sound_1_HOUR_246_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Car_Passing_Sound_Effects_1_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Car_Passing_Sound_Effects_2_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Car_Passing_Sound_Effects_3_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_03_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_06_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_18_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_22_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_23_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_25_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_inside_car_wet_driving_SBA_300062047_preview_26_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_003_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_004_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_008_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_009_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_011_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_015_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_019_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_020_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_021_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_023_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_030_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_031_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_036_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_038_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_041_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_049_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_051_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_055_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_064_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_067_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_072_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_073_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_078_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_096_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_097_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_104_000.wav,normal
+dataset\normal\normal_archive_(2)_Cars_Street_Sounds____60min__Sleep_Video_105_000.wav,normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_002_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_006_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_007_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_010_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_018_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_021_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_038_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_042_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_044_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_046_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_047_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_048_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_055_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_058_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_064_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_065_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_067_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_075_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_076_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_084_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_087_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_096_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_099_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_103_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_114_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_116_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_130_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_135_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_139_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_141_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_142_000.wav",normal
+"dataset\normal\normal_archive_(2)_Motocycles_BIKERS_100___Best_of_Superbikes_Sounds,_Wheelie_and_Burnout_Ultimate_Compilation_148_000.wav",normal
+dataset\normal\normal_sounds_traffic_sound_406_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_408_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_409_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_416_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_418_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_419_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_421_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_422_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_424_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_426_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_443_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_444_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_447_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_461_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_462_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_473_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_475_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_481_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_490_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_504_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_505_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_509_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_513_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_518_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_525_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_531_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_540_000.wav,normal
+dataset\normal\normal_sounds_traffic_sound_543_000.wav,normal

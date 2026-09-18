@@ -1,0 +1,61 @@
+date,experiment,parameter,value,recall,precision,f1,false_alarm_per_hour,notes
+2026-09-15,threshold_sweep,threshold,0.2,0.9838,0.9073,0.944,1288.31,
+2026-09-15,threshold_sweep,threshold,0.3,0.9838,0.9073,0.944,1288.31,
+2026-09-15,threshold_sweep,threshold,0.4,0.9724,0.9111,0.9408,1215.58,
+2026-09-15,threshold_sweep,threshold,0.5,0.9448,0.9166,0.9305,1101.3,
+2026-09-15,threshold_sweep,threshold,0.6,0.7129,0.9628,0.8192,353.25,
+2026-09-15,threshold_sweep,threshold,0.7,0.6845,0.9701,0.8027,270.13,
+2026-09-15,threshold_sweep,threshold,0.8,0.6472,0.9744,0.7778,218.18,
+2026-09-15,consecutive_confirmation,n_of_m,1/1,1.0,0.7249,,,"threshold=0.40, experimental only - see 이예은's gating impl"
+2026-09-15,consecutive_confirmation,n_of_m,2/3,1.0,0.7829,,,"threshold=0.40, experimental only - see 이예은's gating impl"
+2026-09-15,consecutive_confirmation,n_of_m,3/5,1.0,0.9384,,,"threshold=0.40, experimental only - see 이예은's gating impl"
+2026-09-15,threshold_sweep,threshold,0.2,0.9829,0.9247,0.9529,1309.09,
+2026-09-15,threshold_sweep,threshold,0.3,0.9829,0.9247,0.9529,1309.09,
+2026-09-15,threshold_sweep,threshold,0.4,0.974,0.9263,0.9496,1267.53,
+2026-09-15,threshold_sweep,threshold,0.5,0.7949,0.9587,0.8691,561.04,
+2026-09-15,threshold_sweep,threshold,0.6,0.7556,0.9714,0.85,363.64,
+2026-09-15,threshold_sweep,threshold,0.7,0.7187,0.975,0.8275,301.3,
+2026-09-15,threshold_sweep,threshold,0.8,0.6717,0.9805,0.7973,218.18,
+2026-09-15,consecutive_confirmation,n_of_m,1/1,1.0,0.7609,,,"threshold=0.40, experimental only - see 이예은's gating impl"
+2026-09-15,consecutive_confirmation,n_of_m,2/3,1.0,0.814,,,"threshold=0.40, experimental only - see 이예은's gating impl"
+2026-09-15,consecutive_confirmation,n_of_m,3/5,1.0,0.9358,,,"threshold=0.40, experimental only - see 이예은's gating impl"
+2026-09-15,threshold_sweep,threshold,0.2,0.9771,0.9249,0.9503,1298.7,
+2026-09-15,threshold_sweep,threshold,0.3,0.9765,0.9248,0.95,1298.7,
+2026-09-15,threshold_sweep,threshold,0.4,0.9708,0.9267,0.9482,1257.14,
+2026-09-15,threshold_sweep,threshold,0.5,0.7867,0.956,0.8631,592.21,
+2026-09-15,threshold_sweep,threshold,0.6,0.7505,0.9681,0.8455,405.19,
+2026-09-15,threshold_sweep,threshold,0.7,0.727,0.977,0.8336,280.52,
+2026-09-15,threshold_sweep,threshold,0.8,0.6775,0.9807,0.8014,218.18,
+2026-09-15,consecutive_confirmation,n_of_m,1/1,1.0,0.7675,,,"threshold=0.40, experimental only"
+2026-09-15,consecutive_confirmation,n_of_m,2/3,1.0,0.8102,,,"threshold=0.40, experimental only"
+2026-09-15,consecutive_confirmation,n_of_m,3/5,1.0,0.9459,,,"threshold=0.40, experimental only"
+2026-09-16,threshold_sweep,threshold,0.2,0.9671,0.9178,0.9418,1506.49,
+2026-09-16,threshold_sweep,threshold,0.3,0.9671,0.9178,0.9418,1506.49,
+2026-09-16,threshold_sweep,threshold,0.4,0.8011,0.943,0.8663,841.56,
+2026-09-16,threshold_sweep,threshold,0.5,0.782,0.9479,0.857,748.05,
+2026-09-16,threshold_sweep,threshold,0.6,0.7407,0.959,0.8359,550.65,
+2026-09-16,threshold_sweep,threshold,0.7,0.6995,0.9694,0.8126,384.42,
+2026-09-16,threshold_sweep,threshold,0.8,0.6577,0.9787,0.7867,249.35,
+2026-09-16,consecutive_confirmation,n_of_m,1/1,1.0,0.8378,,,"threshold=0.40, experimental only"
+2026-09-16,consecutive_confirmation,n_of_m,2/3,0.9892,0.9109,,,"threshold=0.40, experimental only"
+2026-09-16,consecutive_confirmation,n_of_m,3/5,0.9785,0.9479,,,"threshold=0.40, experimental only"
+2026-09-16,threshold_sweep,threshold,0.2,0.9671,0.9209,0.9435,1444.16,
+2026-09-16,threshold_sweep,threshold,0.3,0.9671,0.9209,0.9435,1444.16,
+2026-09-16,threshold_sweep,threshold,0.4,0.8029,0.9438,0.8677,831.17,
+2026-09-16,threshold_sweep,threshold,0.5,0.7873,0.9489,0.8606,737.66,
+2026-09-16,threshold_sweep,threshold,0.6,0.7521,0.9648,0.8453,477.92,
+2026-09-16,threshold_sweep,threshold,0.7,0.7157,0.97,0.8237,384.42,
+2026-09-16,threshold_sweep,threshold,0.8,0.6726,0.9757,0.7963,290.91,
+2026-09-16,consecutive_confirmation,n_of_m,1/1,1.0,0.8532,,,"threshold=0.40, experimental only"
+2026-09-16,consecutive_confirmation,n_of_m,2/3,0.9892,0.9154,,,"threshold=0.40, experimental only"
+2026-09-16,consecutive_confirmation,n_of_m,3/5,0.9785,0.9381,,,"threshold=0.40, experimental only"
+2026-09-16,threshold_sweep,threshold,0.2,0.9892,0.9787,0.984,20.78,
+2026-09-16,threshold_sweep,threshold,0.3,0.9892,0.9787,0.984,20.78,
+2026-09-16,threshold_sweep,threshold,0.4,0.9892,0.9787,0.984,20.78,
+2026-09-16,threshold_sweep,threshold,0.5,0.9892,0.9787,0.984,20.78,
+2026-09-16,threshold_sweep,threshold,0.6,0.9892,0.9787,0.984,20.78,
+2026-09-16,threshold_sweep,threshold,0.7,0.9677,0.9783,0.973,20.78,
+2026-09-16,threshold_sweep,threshold,0.8,0.9462,0.9832,0.9644,15.58,
+2026-09-16,consecutive_confirmation,n_of_m,1/1,1.0,0.8815,,,"threshold=0.40, experimental only"
+2026-09-16,consecutive_confirmation,n_of_m,2/3,0.9892,0.9154,,,"threshold=0.40, experimental only"
+2026-09-16,consecutive_confirmation,n_of_m,3/5,0.9785,0.9479,,,"threshold=0.40, experimental only"

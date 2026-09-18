@@ -1,17 +1,32 @@
+# main.py
+import random
+from classifier.adapter import predict
 from decision.judge import judge
 from logger.csv_logger import EventLogger
 
 log = EventLogger()
 
-samples = [
-    ({"horn": .05, "siren": .82, "crash": .03, "normal": .10}, 3),
-    ({"horn": .55, "siren": .10, "crash": .05, "normal": .30}, 0),
-    ({"horn": .05, "siren": .05, "crash": .05, "normal": .85}, 6),  # 무시돼야 함
-]
 
-for probs, direction in samples:
+def process(audio_path, direction=None):
+    probs = predict(audio_path)
+    if direction is None:
+        direction = random.randint(0, 7)   # 하드웨어 없어서 임시
+
     cmd = judge(probs, direction)
+    top = max(probs, key=probs.get)
+    print(f"{audio_path}\n  → {top} {probs[top]:.3f}")
+
     if cmd:
-        print(cmd)
+        print(f"  진동: {cmd['pattern_name']} 세기{cmd['intensity']} 방향{cmd['direction']}")
         log.log(cmd["sound_class"], cmd["confidence"], cmd["direction"],
                 cmd["intensity"], cmd["pattern_name"])
+    else:
+        print("  알림 없음")
+    return cmd
+
+
+if __name__ == "__main__":
+    import sys, glob
+    files = sys.argv[1:] or sorted(glob.glob("data/*/*.wav"))[:5]
+    for f in files:
+        process(f)

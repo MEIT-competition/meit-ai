@@ -22,7 +22,7 @@ for _, row in val.iterrows():
         skipped += 1
         continue
 
-    probs = predict(str(path))
+    probs, _ = predict(str(path))   # 튜플로 바뀌었음
     pred = max(probs, key=probs.get)
 
     total[cls] += 1

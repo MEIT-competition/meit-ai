@@ -1,5 +1,5 @@
-# 게이팅 주기(ms) - 임시
-GATING_MS = 300
+# 게이팅 주기(ms) 
+GATING_MS = 250
 
 # 긴 버전 (게이팅 제약 x)
 PATTERNS_FULL = {

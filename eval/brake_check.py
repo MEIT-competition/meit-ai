@@ -7,7 +7,8 @@ KEYS = ["brake", "skid", "handbrake", "screech", "tire"]
 miss_brake = miss_other = ok_brake = ok_other = 0
 
 for f in sorted((Path("data") / "crash").glob("*.wav")):
-    p = predict(str(f))["crash"]
+    probs, _ = predict(str(f))
+    p = probs["crash"]
     is_brake = any(k in f.name.lower() for k in KEYS)
     if p < 0.4:
         if is_brake: miss_brake += 1

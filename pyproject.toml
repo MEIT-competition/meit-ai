@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meit-ai"
+version = "0.1.0"
+description = "MEIT 위험음 분류 및 진동 판단 모듈"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["classifier", "decision", "logger"]

@@ -4,7 +4,7 @@ from classifier.adapter import predict
 
 vals = []
 for f in sorted((Path("data") / "crash").glob("*.wav")):
-    p = predict(str(f))
+    p, _ = predict(str(f))
     if p["crash"] < 0.4:
         vals.append((p["crash"], f.name))
 

@@ -8,7 +8,7 @@ src = Counter()
 pred_to = Counter()
 
 for f in sorted((Path("data") / "crash").glob("*.wav")):
-    probs = predict(str(f))
+    probs, _ = predict(str(f))
     if probs["crash"] >= 0.4:
         continue
     name = f.name.lower()

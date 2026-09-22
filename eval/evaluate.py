@@ -15,7 +15,7 @@ missed = Counter()
 
 for cls in CLASSES:
     for f in sorted((Path("data") / cls).glob("*.wav")):
-        probs = predict(str(f))
+        probs, _ = predict(str(f))
         pred = max(probs, key=probs.get)
 
         total[cls] += 1

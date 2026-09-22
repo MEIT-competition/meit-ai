@@ -7,7 +7,7 @@ import librosa
 
 CLASSES = ["horn", "siren", "crash", "normal"]
 SR = 16000
-CLIP_SEC = 4.5   # 학습과 동일하게 고정
+CLIP_SEC = 2.5   
 
 MODEL_PATH = "model/saved_model/danger_sound_classifier"
 CALIB_PATH = Path("model/calibration.json")
@@ -34,20 +34,12 @@ def load_temperature():
             print("[경고] calibration.json 없음 — 보정 미적용")
     return _temperature
 
-
 def fit_length(wav, sec=CLIP_SEC):
-    """4.5초로 맞춤 — 짧으면 패딩, 길면 가장 큰 구간 중심으로 자름"""
+    """학습·평가와 동일하게 앞에서부터 자름 (짧으면 뒤를 0으로 채움)"""
     n = int(SR * sec)
-    if len(wav) == n:
-        return wav
     if len(wav) < n:
         return np.pad(wav, (0, n - len(wav)))
-    win = SR // 10
-    energy = np.convolve(wav ** 2, np.ones(win), mode="same")
-    center = int(np.argmax(energy))
-    start = max(0, min(center - n // 2, len(wav) - n))
-    return wav[start:start + n]
-
+    return wav[:n]
 
 def measure_db(wav):
     """RMS 기반 dBFS"""
